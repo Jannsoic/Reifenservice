@@ -57,8 +57,8 @@ function generateTimeSlots(date){
 generateCalendar();
 
 // Form Submission + Telegram + LocalStorage
-const BOT_TOKEN = "DEIN_BOT_TOKEN";
-const CHAT_ID = "DEINE_CHAT_ID";
+const BOT_TOKEN = "8582377442:AAGTfHyAYvOIt8jp7ffq78Xga4gmI3F0QPQ";
+const CHAT_ID = "6454892668";
 document.getElementById('terminForm').addEventListener('submit', async e=>{
   e.preventDefault();
   const name=document.getElementById('name').value;
