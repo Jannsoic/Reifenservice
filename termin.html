@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Termin buchen – Reifenservice</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+<header>
+<h1>Termin buchen</h1>
+<nav>
+  <a href="index.html">Start</a>
+  <a href="preise.html">Preise</a>
+  <a href="equipment.html">Equipment</a>
+</nav>
+</header>
+
+<div class="container">
+  <div class="tabs">
+    <div class="tab active" data-tab="buchung">Termin vereinbaren</div>
+    <div class="tab" data-tab="oeffnungszeiten">Öffnungszeiten</div>
+  </div>
+
+  <div id="buchung" class="tab-content active">
+    <form id="terminForm">
+      <label>Voller Name*</label>
+      <input type="text" id="name" required>
+      <label>Reifengröße*</label>
+      <select id="groesse" required>
+        <option value="">Bitte wählen...</option>
+        <option value="15">15 Zoll</option>
+        <option value="16">16 Zoll</option>
+        <option value="17">17 Zoll</option>
+        <option value="18">18 Zoll</option>
+        <option value="19">19 Zoll</option>
+        <option value="20">20 Zoll</option>
+      </select>
+      <label>Felgentyp*</label>
+      <select id="felge" required>
+        <option value="">Bitte wählen...</option>
+        <option value="Stahl">Stahl</option>
+        <option value="Alu">Alu</option>
+      </select>
+      <label>Nachricht</label>
+      <textarea id="nachricht" rows="3"></textarea>
+      <label>Kontakt (E-Mail/Telefon)*</label>
+      <input type="text" id="kontaktinfo" required>
+      <label>Datum*</label>
+      <div class="calendar" id="calendar"></div>
+      <label>Uhrzeit*</label>
+      <div class="time" id="timeSlots"></div>
+      <button type="submit">Termin absenden</button>
+    </form>
+    <div id="feedback" class="feedback"></div>
+  </div>
+
+  <div id="oeffnungszeiten" class="tab-content">
+    <h3>Öffnungszeiten</h3>
+    <p>Montag-Freitag: 15:00–20:00 Uhr</p>
+    <p>Samstag-Sonntag: 10:00–20:00 Uhr</p>
+  </div>
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
